@@ -146,7 +146,14 @@ async def reload(ctx):
         except Exception as e:
             await ctx.send(f'{cog} failed to reload: {e}')
     await ctx.send('All cogs reloaded successfully')
-@tasks.loop(seconds=60)
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def reload_status(ctx):
+    await ctx.message.delete()
+    embed = create_embed()
+    await auto_send_embed.message.edit(embed=embed)
+    await ctx.send('Status reloaded successfully', delete_after=5)
+@tasks.loop(seconds=300)
 async def auto_send_embed():
     embed = create_embed()
     await auto_send_embed.message.edit(embed=embed)
