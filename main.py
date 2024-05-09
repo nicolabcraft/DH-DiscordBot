@@ -111,7 +111,7 @@ def create_embed():
             )
         embed.add_field(
             name="Légende:",
-            value=":green_circle: - Serveur en ligne\n:yellow_circle: - Serveur en attente\n:red_circle: - Serveur hors ligne\n:warning: - Serveur en maintenance\n",
+            value="<a:online:1237966542352945192> - Serveur en ligne\n<a:warning:1237966536212349010> - Serveur en attente\n<a:offline:1237966540519768144> - Serveur hors ligne\n<a:maintenance:1237966537483358228> - Serveur en maintenance\n",
             inline=False
         )
         api.logout()
