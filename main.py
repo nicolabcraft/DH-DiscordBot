@@ -57,12 +57,12 @@ def create_embed():
             timestamp=datetime.now()
         )
         embed.set_thumbnail(
-            url="https://cdn.discordapp.com/icons/833439085950664714/bbfb624af1ee9d6b3d2921d82102be0f.png?size=512"
+            url="https://cdn.discordapp.com/icons/833439085950664714/bbfb624af1ee9d6b3d2921d82102be0f.png?size=512" # Image du serveur
         )
         embed.set_author(
-            name='DayHosting',
-            url='https://dayhosting.fr',
-            icon_url='https://cdn.discordapp.com/icons/833439085950664714/bbfb624af1ee9d6b3d2921d82102be0f.png?size=512'
+            name='DayHosting', # Nom de l'auteur
+            url='https://dayhosting.fr', # Lien de l'auteur
+            icon_url='https://cdn.discordapp.com/icons/833439085950664714/bbfb624af1ee9d6b3d2921d82102be0f.png?size=512' # Image de l'auteur
         )
         embed.set_footer(
             text=f'Dernière actualisation des données'
