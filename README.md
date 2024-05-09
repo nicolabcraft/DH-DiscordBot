@@ -7,6 +7,7 @@
 <h2>Project Screenshots:</h2>
 
 <img src="https://media.discordapp.net/attachments/1204549942375620628/1237933803347906580/image.png?ex=663d7332&amp;is=663c21b2&amp;hm=0fa4b7b1736fd42a689a214bcbb49d274c9cd66e3dc411fb5219d5ac0815db9c&amp;=&amp;format=webp&amp;quality=lossless&amp;width=472&amp;height=468" alt="project-screenshot" width="400" height="400/">
+<img src="https://media.discordapp.net/attachments/1204549942375620628/1237942444859985931/image.png?ex=663d7b3e&is=663c29be&hm=a55c2e4d53cae11da7cbfa96e2b49440ed2ab6626ba20f491f7e46998e3e5473&=&format=webp&quality=lossless" alt="projet-error">
 
 <h2>🛠️ Installation Steps:</h2>
 
