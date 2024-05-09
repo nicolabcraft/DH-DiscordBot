@@ -18,9 +18,7 @@ pip install -r requirements.txt
 
 <h2>🍰 Contribution Guidelines:</h2>
 
-FrenchDoomer
-
-  
+*   FrenchDoomer  
   
 <h2>💻 Built with</h2>
 
