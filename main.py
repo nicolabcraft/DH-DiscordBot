@@ -40,6 +40,7 @@ async def on_ready():
     auto_send_embed.start()
 
 def create_embed():
+    api = None
     try:
         api = UptimeKumaApi(UPTIME_KUMA_SERVER)
         api.login(UPTIME_KUMA_USERNAME, UPTIME_KUMA_PASSWORD)
@@ -112,7 +113,9 @@ def create_embed():
             color=disnake.Color.blue(),
             timestamp=datetime.now()
         )
-        api.logout()
+        if api is not None:
+            api.logout()
+
 
     print(f"Embed updated at {datetime.now()}")
 
