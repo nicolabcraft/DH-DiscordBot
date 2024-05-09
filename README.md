@@ -1,4 +1,4 @@
-<h1 align="center" id="title">UptimeKuma-Bot</h1>
+<h1 align="center" id="title">DH-DiscordBot</h1>
 
 <p align="center"><img src="https://socialify.git.ci/nicolabcraft/DH-Bot/image?font=Inter&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Diagonal%20Stripes&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
 
@@ -7,6 +7,7 @@
 <h2>Project Screenshots:</h2>
 
 <img src="https://media.discordapp.net/attachments/1204549942375620628/1237933803347906580/image.png?ex=663d7332&amp;is=663c21b2&amp;hm=0fa4b7b1736fd42a689a214bcbb49d274c9cd66e3dc411fb5219d5ac0815db9c&amp;=&amp;format=webp&amp;quality=lossless&amp;width=472&amp;height=468" alt="project-screenshot" width="400" height="400/">
+<img src="https://media.discordapp.net/attachments/1204549942375620628/1237942444859985931/image.png?ex=663d7b3e&is=663c29be&hm=a55c2e4d53cae11da7cbfa96e2b49440ed2ab6626ba20f491f7e46998e3e5473&=&format=webp&quality=lossless" alt="projet-error">
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -18,9 +19,7 @@ pip install -r requirements.txt
 
 <h2>🍰 Contribution Guidelines:</h2>
 
-FrenchDoomer
-
-  
+*   FrenchDoomer  
   
 <h2>💻 Built with</h2>
 
