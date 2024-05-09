@@ -106,7 +106,7 @@ def create_embed():
             )
         api.logout()
 
-    except(UptimeKumaException,Timeout,socketio.exceptions.TimeoutError):
+    except(UptimeKumaException,Timeout,socketio.exceptions.TimeoutError) as e:
         embed = disnake.Embed(
             title='Status des serveurs',
             description='Une erreur est survenu avec la connexion a notre serveur de status, merci de patienter quelques instants ou de contacter un <@&841787186558926898>.',
@@ -115,6 +115,7 @@ def create_embed():
         )
         if api is not None:
             api.logout()
+        print(e)
 
 
     print(f"Embed updated at {datetime.now()}")
