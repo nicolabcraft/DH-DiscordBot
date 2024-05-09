@@ -109,11 +109,11 @@ def create_embed():
                 value=embed_value,
                 inline=False
             )
-            embed.add_field(
-                name="Légende:",
-                value=":red_circle: - Serveur hors ligne\n:green_circle: - Serveur en ligne\n:yellow_circle: - Serveur en attente\n:warning: - Serveur en maintenance\n",
-                inline=False
-            )
+        embed.add_field(
+            name="Légende:",
+            value=":green_circle: - Serveur en ligne\n:yellow_circle: - Serveur en attente\n:red_circle: - Serveur hors ligne\n:warning: - Serveur en maintenance\n",
+            inline=False
+        )
         api.logout()
 
     except(UptimeKumaException,Timeout,socketio.exceptions.TimeoutError) as e:
