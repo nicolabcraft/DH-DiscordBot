@@ -1,8 +1,7 @@
 import disnake, os, json
 from disnake.ext import commands
 
-intents = disnake.Intents.default()
-intents.message_content = True
+intents = disnake.Intents.all()
 
 with open('config.json') as f:
     configs = json.load(f)
