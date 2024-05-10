@@ -5,12 +5,11 @@ from uptime_kuma_api import UptimeKumaApi
 from uptime_kuma_api.exceptions import UptimeKumaException, Timeout
 
 class Embed_Status(commands.Cog):
-    """This will be for a ping command."""
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         with open('config.json') as f:
-            self.configs = json.load(f) # Replace with your channel ID
+            self.configs = json.load(f)
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -128,6 +127,8 @@ class Embed_Status(commands.Cog):
         await self.auto_send_embed.message.edit(embed=embed)
 def setup(bot: commands.Bot):
     bot.add_cog(Embed_Status(bot))
+    print("Embed_Status cog is loaded")
 
 def teardown(bot):
     bot.remove_cog("Embed_Status")
+    print("Embed_Status cog is unloaded")
