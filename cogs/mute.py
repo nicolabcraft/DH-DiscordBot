@@ -15,7 +15,7 @@ class Mute(commands.Cog):
         if not muted_role:
             muted_role = await ctx.guild.create_role(name="Mute")
             for channel in ctx.guild.channels:
-                await channel.set_permissions(muted_role, speak=False, send_messages=False, read_message_history=True, read_messages=False)
+                await channel.set_permissions(muted_role, speak=False, send_messages=False, read_message_history=True, read_messages=True)
         await member.add_roles(muted_role, reason=reason)
         await ctx.send(f"{member.mention} a été rendu muet \n Raison: {reason}")
 
@@ -36,7 +36,7 @@ class Mute(commands.Cog):
         if not muted_role:
             muted_role = await ctx.guild.create_role(name="Mute")
             for channel in ctx.guild.channels:
-                await channel.set_permissions(muted_role, speak=False, send_messages=False, read_message_history=True, read_messages=False)
+                await channel.set_permissions(muted_role, speak=False, send_messages=False, read_message_history=True, read_messages=True)
         await member.add_roles(muted_role, reason=reason)
         await ctx.send(f"{member.mention} a été rendu muet pour {time} secondes pour {reason}")
         await asyncio.sleep(time)
