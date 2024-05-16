@@ -15,25 +15,25 @@ class ErrorHandler(commands.Cog):
                 await ctx.message.delete()
             except disnake.Forbidden:
                 pass
-            await ctx.send("Commande non trouvée. Veuillez vérifier et essayer à nouveau.")
+            await ctx.send("Commande non trouvée. Veuillez vérifier et essayer à nouveau.", delete_after=5)
         elif isinstance(error, commands.MissingRequiredArgument):
             try:
                 await ctx.message.delete()
             except disnake.Forbidden:
                 pass
-            await ctx.send("Il manque un argument requis pour cette commande.")
+            await ctx.send("Il manque un argument requis pour cette commande.", delete_after=5)
         elif isinstance(error, commands.MissingPermissions):
             try:
                 await ctx.message.delete()
             except disnake.Forbidden:
                 pass
-            await ctx.send("Vous n'avez pas les permissions nécessaires pour exécuter cette commande.")
+            await ctx.send("Vous n'avez pas les permissions nécessaires pour exécuter cette commande.", delete_after=5)
         else:
             try:
                 await ctx.message.delete()
             except disnake.Forbidden:
                 pass
-            await ctx.send(f"Une erreur est survenue : {error}")
+            await ctx.send(f"Une erreur est survenue : {error}", delete_after=15)
 
 def setup(bot: commands.Bot):
     bot.add_cog(ErrorHandler(bot))

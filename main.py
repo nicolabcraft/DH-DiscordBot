@@ -10,8 +10,12 @@ activity = disnake.Activity(
     name=configs["ACTIVITY_NAME"],
     type=disnake.ActivityType.watching
 )
-bot = commands.Bot(command_prefix=configs["COMMAND_PREFIX"], intents=intents, activity=activity)
 
+bot = commands.Bot(
+    command_prefix=configs["COMMAND_PREFIX"],
+    intents=intents,
+    activity=activity)
+bot.help_command = None
 # Loading Cogs for the first time
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
@@ -42,5 +46,4 @@ async def unload(ctx, extension):
 @bot.event
 async def on_ready():
     print(f'Bot is ready. Logged in as {bot.user}')
-
 bot.run(configs["DISCORD_BOT_TOKEN"])
